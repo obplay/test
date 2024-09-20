@@ -1,12 +1,12 @@
-rollbackable_tasks:
+rollbackableTasks:
   stage: 
     - name: "stage1"
       cluster: "test"
       apply_time: "time"
-      max_rolling_update_parallel_deployment_num: 3
+      maxRollingUpdateParallelNum: 3
       max_parallel_num: 5
-      need_approve_to_start: true
+      needApproveToStart: true
       tasks:
         - task_name: "tsk1"
           task_type: "no_rolling_update"
-          need_approve_to_start: false
+          needApproveToStart: false
