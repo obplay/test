@@ -1,5 +1,5 @@
 rollbackableTasks:
-    - stage: "stage1"
+    - name: "stage1"
       cluster: "test"
       apply_time: "time"
       maxRollingUpdateParallelNum: 3
