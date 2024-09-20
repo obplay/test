@@ -3,12 +3,12 @@ template:
     type: "list"
     child: 
       - name: "stage"
-        type: "object"
+        type: "string"
       - name: "cluster"
         type: "string"
         valueIn: ["test"]
       - name: "applyTime"
-        type: "time"
+        type: "string"
       - name: "maxRollingUpdateParallelNum"
         type: "int"
       - name: "maxParallelNum"
