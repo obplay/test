@@ -1,12 +1,11 @@
 rollbackableTasks:
-  stage: 
-    - name: "stage1"
-      cluster: "test"
-      apply_time: "time"
-      maxRollingUpdateParallelNum: 3
-      max_parallel_num: 5
-      needApproveToStart: true
-      tasks:
-        - task_name: "tsk1"
-          task_type: "no_rolling_update"
-          needApproveToStart: false
+  - name: "stage1"
+    cluster: "test"
+    apply_time: "time"
+    maxRollingUpdateParallelNum: 3
+    max_parallel_num: 5
+    needApproveToStart: true
+    tasks:
+      - task_name: "tsk1"
+        task_type: "no_rolling_update"
+        needApproveToStart: false
