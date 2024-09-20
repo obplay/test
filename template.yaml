@@ -23,7 +23,7 @@ template:
           - name: "taskType"
             type: "string"
             valueIn: ["no_rolling_update", "rolling_update", "gray_release"]
-          - name: "need_approve_to_start"
+          - name: "needApproveToStart"
             type: "bool"
-          - name: "need_approve_to_rolling"
+          - name: "needApproveToRolling"
             type: "bool"
