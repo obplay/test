@@ -1,0 +1,29 @@
+template:
+  - name: "rollbackableTasks"
+    type: "list"
+    child: 
+      - name: "stage"
+        type: "string"
+      - name: "cluster"
+        type: "string"
+        valueIn: ["test"]
+      - name: "applyTime"
+        type: "time"
+      - name: "maxRollingUpdateParallelNum"
+        type: "int"
+      - name: "maxParallelNum"
+        type: "int"
+      - name: "needApproveToStart"
+        type: "bool"
+      - name: "tasks"
+        type: "list"
+        child:
+          - name: "taskName"
+            type: "string"
+          - name: "taskType"
+            type: "string"
+            valueIn: ["no_rolling_update", "rolling_update", "gray_release"]
+          - name: "need_approve_to_start"
+            type: "bool"
+          - name: "need_approve_to_rolling"
+            type: "bool"
