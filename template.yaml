@@ -3,7 +3,7 @@ template:
     type: "list"
     child: 
       - name: "stage"
-        type: "string"
+        type: "object"
       - name: "cluster"
         type: "string"
         valueIn: ["test"]
