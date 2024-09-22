@@ -9,3 +9,4 @@ rollbackableTasks:
         - taskName: "tsk1"
           taskType: "no_rolling_update"
           needApproveToStart: false
+          needApproveToRolling: false
